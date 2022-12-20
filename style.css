@@ -18,7 +18,7 @@ section{
 
 .calculator{
     width: 300px;
-    height: 400px;
+    height: 445px;
     background-color: aliceblue;
 }
 
@@ -26,4 +26,88 @@ section{
     width: 300px;
     height: 70px;
     background: rgba(0, 0, 0, 0.7);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    grid-template-areas: 
+    "ac ac del entre"
+    "n1 n2 n3 por"
+    "n4 n5 n6 mas"
+    "n7 n8 n9 menos"
+    "punto n0 igual igual";
+}
+
+.ac-div{
+    grid-area: ac;
+}
+
+.del-div{
+    grid-area: del;
+}
+
+.entre-div{
+    grid-area: entre;
+}
+
+.n1-div{
+    grid-area: n1;
+}
+
+.n2-div{
+    grid-area: n2;
+}
+
+.n3-div{
+    grid-area: n3;
+}
+
+.por-div{
+    grid-area: por;
+}
+
+.n4-div{
+    grid-area: n4;
+}
+
+.n5-div{
+    grid-area: n5;
+}
+
+.n6-div{
+    grid-area: n6;
+}
+
+.mas-div{
+    grid-area: mas;
+}
+
+.n7-div{
+    grid-area: n7;
+}
+
+.n8-div{
+    grid-area: n8;
+}
+
+.n9-div{
+    grid-area: n9;
+}
+
+.menos-div{
+    grid-area: menos;
+}
+
+.punto-div{
+    grid-area: punto;
+}
+
+.n0-div{
+    grid-area: n0;
+}
+
+.igual-div{
+    grid-area: igual;
 }
