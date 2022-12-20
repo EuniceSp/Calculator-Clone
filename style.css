@@ -11,7 +11,10 @@ body{
 }
 
 section{
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -42,72 +45,128 @@ section{
 
 .ac-div{
     grid-area: ac;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }
 
 .del-div{
     grid-area: del;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
 }
 
 .entre-div{
     grid-area: entre;
+    padding-left: 1px;
+    padding-bottom: 1px;
 }
 
 .n1-div{
     grid-area: n1;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }
 
 .n2-div{
     grid-area: n2;
+    padding: 1px;
 }
 
 .n3-div{
     grid-area: n3;
+    padding: 1px;
 }
 
 .por-div{
     grid-area: por;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
 }
 
 .n4-div{
     grid-area: n4;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }
 
 .n5-div{
     grid-area: n5;
+    padding: 1px;
 }
 
 .n6-div{
     grid-area: n6;
+    padding: 1px;
 }
 
 .mas-div{
     grid-area: mas;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
 }
 
 .n7-div{
     grid-area: n7;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
 }
 
 .n8-div{
     grid-area: n8;
+    padding: 1px;
 }
 
 .n9-div{
     grid-area: n9;
+    padding: 1px;
 }
 
 .menos-div{
     grid-area: menos;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
 }
 
 .punto-div{
     grid-area: punto;
+    padding-top: 1px;
+    padding-right: 1px;
 }
 
 .n0-div{
     grid-area: n0;
+    padding-left: 1px;
+    padding-top: 1px;
+    padding-right: 1px;
 }
 
 .igual-div{
     grid-area: igual;
+    padding-top: 1px;
+    padding-left: 1px;
 }
+
+.ac, .del, .entre, .n1, .n2, .n3,
+.por, .n4, .n5, .n6, .mas, .n7, .n8, 
+.n9, .menos, .punto, .n0, .igual{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(203, 236, 243);
+    border: none;
+    font-family: "Gotham Rounded", sans-serif;
+    color: #000000;
+    font-weight: 550;
+    font-size: 22px;
+}
+
+button:active{
+    background-color: rgb(159, 235, 250);
+}
+
