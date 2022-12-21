@@ -31,6 +31,14 @@ section{
     background: rgba(0, 0, 0, 0.7);
 }
 
+#output{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
 .buttons{
     display: grid;
     grid-template-columns: 75px 75px 75px 75px;
