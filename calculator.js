@@ -26,74 +26,110 @@ let operacion
 
 /**Eventos botones */
 btnN1.addEventListener('click', function(e){
-    output.textContent= output.textContent + "1"
+    output.textContent= output.textContent + "1";
 })
 
 btnN2.addEventListener('click', function(e){
-    output.textContent= output.textContent + "2"
+    output.textContent= output.textContent + "2";
 })
 
 btnN3.addEventListener('click', function(e){
-    output.textContent= output.textContent + "3"
+    output.textContent= output.textContent + "3";
 })
 
 btnN4.addEventListener('click', function(e){
-    output.textContent= output.textContent + "4"
+    output.textContent= output.textContent + "4";
 })
 
 btnN5.addEventListener('click', function(e){
-    output.textContent= output.textContent + "5"
+    output.textContent= output.textContent + "5";
 })
 
 btnN6.addEventListener('click', function(e){
-    output.textContent= output.textContent + "6"
+    output.textContent= output.textContent + "6";
 })
 
 btnN7.addEventListener('click', function(e){
-    output.textContent= output.textContent + "7"
+    output.textContent= output.textContent + "7";
 })
 
 btnN8.addEventListener('click', function(e){
-    output.textContent= output.textContent + "8"
+    output.textContent= output.textContent + "8";
 })
 
 btnN9.addEventListener('click', function(e){
-    output.textContent= output.textContent + "9"
+    output.textContent= output.textContent + "9";
 })
 
 btnN0.addEventListener('click', function(e){
-    output.textContent= output.textContent + "0"
+    output.textContent= output.textContent + "0";
 })
 
-btnAc.addEventListener('click', resetear())
+btnAc.addEventListener('click', function(e){
+    resetear();
+})
 
-btnDel.addEventListener('click', borrar())
+btnDel.addEventListener('click', function(e){
+    limpiar();
+})
 
 btnMas.addEventListener('click', function(e){
-    op1 = output.textContent
-    operacion = "+"
-    limpiar()
+    op1 = output.textContent;
+    operacion = "+";
+    limpiar();
 })
 
 btnMen.addEventListener('click', function(e){
-    op1 = output.textContent
-    operacion = "-"
-    limpiar()
+    op1 = output.textContent;
+    operacion = "-";
+    limpiar();
 })
 
 btnPor.addEventListener('click', function(e){
-    op1 = output.textContent
-    operacion = "*"
-    limpiar()
+    op1 = output.textContent;
+    operacion = "*";
+    limpiar();
 })
 
 btnEnt.addEventListener('click', function(e){
-    op1 = output.textContent
-    operacion = "/"
-    limpiar()
+    op1 = output.textContent;
+    operacion = "/";
+    limpiar();
 })
 
 btnIgu.addEventListener('click', function(e){
     op2 = output.textContent;
-    solucion()
+    solucion();
 })
+
+btnPun.addEventListener('click', function(e){
+    output.textContent= output.textContent + ".";
+})
+
+/**Funciones para calculadora */
+
+function limpiar(){
+    output.textContent= "";
+}
+
+function resetear(){
+    output.textContent = "";
+    op1 = 0;
+    op2 = 0;
+    operacion = ""
+}
+
+function solucion(){
+    let resultado = 0;
+    if(operacion === "+"){
+        resultado = parseFloat(op1)+parseFloat(op2);
+    } else if (operacion === "-"){
+        resultado = parseFloat(op1)-parseFloat(op2);
+    } else if (operacion === "*"){
+        resultado = parseFloat(op1)*parseFloat(op2);
+    } else if (operacion === "/"){
+        resultado = parseFloat(op1)/parseFloat(op2);
+    }
+    resetear();
+    output.textContent = resultado;
+}
